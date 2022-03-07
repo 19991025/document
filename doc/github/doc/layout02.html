@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
+    <title>layout02</title>
+<style>
     * {margin: 0;padding: 0;box-sizing: border-box;font-size: inherit;font-weight: normal;color: inherit;}
-    h1 {font-size: 30px;text-align: center;margin: 100px;}
     img {vertical-align: middle;}
-    section {
+    /* basic float layout*/
+    h1 {font-size: 30px;text-align: center;margin: 100px;}
+    .sc01,.sc03,.sc05 {
         padding: 100px 0;
+        background-color: #f2f2f2;
         text-align: center;
     }
 
-    .sc01,.sc03,.sc05 {
-        background-color: #f2f2f2;
+    .sc02,.sc04 {
+        padding: 100px 0;
+        text-align: center;
     }
-
     .sc01 h2 {
         font-size: 30px;
         font-weight: bold;
@@ -28,42 +30,51 @@
         margin-bottom: 30px;
     }
 
-    div {
-        text-align: center;
+     .container {
         margin: 0 auto;
         width: 1200px;
     }
 
-    .sc01::after {content:"";display:block;clear:both;}
-    .sc02::after {content:"";display:block;clear:both;}
-    .sc03::after {content:"";display:block;clear:both;}
-    .sc04::after {content:"";display:block;clear:both;}
-    .sc05::after {content:"";display:block;clear:both;}
+     .container::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
 
-     figure {float:left;width:33.33333333%;padding:0 15px;}
-     figure img {width:100%;}
+     figure {
+        float: left;
+        width: 300px;
+        height: 300px;
+        padding: 0 15px;
+    }
 
-    
-
-    figure p {
-        color: #f00;
+     figure img {
+        width: 100%;
         margin-bottom: 20px;
     }
-    figure a {
+
+     figure p {
+        color: #f00;
+        margin-bottom: 20px;
+
+    }
+
+     figure a {
         display: block;
         width: 160px;
         height: 30px;
         background-color: #333;
         color: #fff;
         margin: 0 auto;
-        line-height: 30px;
         margin-bottom: 20px;
+        line-height: 30px;
+        border-radius: 10px;
     }
-
-    </style>
+</style>
 </head>
 <body>
-    <h1>기본 레이아웃02</h1>
+
+    <h1>layout02</h1>
 
     <section class="sc01">
     <h2>Lorem, ipsum dolor.</h2>
@@ -87,7 +98,7 @@
     </div>
 </section>
 <section class="sc02">
-    <div class="container02">
+    <div class="container">
         <figure>
             <img src="./img/menu_n01.jpg">
             <p>Lorem, ipsum dolor.</p>
@@ -107,11 +118,10 @@
             <img src="./img/menu_n01.jpg">
             <p>Lorem, ipsum dolor.</p>
             <a href="#!">more</a>
-        </figure>
     </div>
 </section>
 <section class="sc03">
-    <div class="container03">
+    <div class="container">
         <figure>
             <img src="./img/menu_n01.jpg">
             <p>Lorem, ipsum dolor.</p>
@@ -140,7 +150,7 @@
     </div>
 </section>
 <section class="sc04">
-    <div class="container04">
+    <div class="container">
         <figure>
             <img src="./img/menu_n01.jpg">
             <p>Lorem, ipsum dolor.</p>
@@ -174,7 +184,7 @@
     </div>
 </section>
 <section class="sc05">
-    <div class="container05">
+    <div class="container">
         <figure>
             <img src="./img/menu_n01.jpg">
             <p>Lorem, ipsum dolor.</p>
@@ -182,6 +192,11 @@
         </figure>
         <figure>
             <img src="./img/menu_n02.jpg">
+            <p>Lorem, ipsum dolor.</p>
+            <a href="#!">more</a>
+        </figure>
+        <figure>
+            <img src="./img/menu_n03.jpg">
             <p>Lorem, ipsum dolor.</p>
             <a href="#!">more</a>
         </figure>
