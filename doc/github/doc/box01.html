@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스모델 01 - 요소에 대한 기본 성질을 설명한다.</title>
+    <style>
+        /* tag seletor */
+        body {margin: 0;}
+        div {
+            width: 300px;
+            background-color: #f00;
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid #333;
+        }
+
+        .border-box {
+            box-sizing: border-box;
+            width: 300px;
+            background-color: #ff0;
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid #333;
+        }
+
+        span {
+            width: 300px;
+            background-color: #f00;
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid #333;
+            height: 100px;
+        }
+
+        .display-block {
+            display: block;
+            box-sizing: border-box;
+            background-color: #ff0;
+        }
+
+    </style>
+</head>
+<body>
+<!--글자 그림(html)의 내용에 관련된 tag를 제외한 대부분의 tag는 박스이다.display:block; 속성을 가진다.-->
+<!-- 
+    1. box는 투명하다.
+    2. box는 width;auto;로 꽉 채운다.
+    3. box는 사교적이지 않다. 옆에 다른 요소가 오지 못한다.
+-->
+<div>
+    box
+</div>
+<div class="border-box">
+    box
+</div>
+<!--
+    1. inline 요소는 width height 값을 가지지 못한다.
+    2. inline 요소는 아래위 margin padding 값을 가지지 못한다.
+    3. inline 요소는 
+-->
+<span>
+    inline
+</span>
+<span class="display-block">
+    inline
+</span>
+</body>
+</html>
