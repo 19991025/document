@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout02</title>
+<style>
+    * {margin: 0;padding: 0;box-sizing: border-box;font-size: inherit;font-weight: normal;color: inherit;}
+    img {vertical-align: middle;}
+    /* basic float layout*/
+    h1 {font-size: 30px;text-align: center;margin: 100px;}
+    
+    section {
+        text-align: center;
+        padding: 100px;
+    }
+    .sc01 h2 {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .sc01>p {
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+
+     .container {
+        margin: 0 auto;
+        width: 1200px;
+    }
+
+     .container::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    figure img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    figure {
+        float: left;
+        padding: 0 15px;
+    }
+
+    .sc01  {background-color: #f2f2f2;}
+    .sc01 figure { width: 33.33333%;}
+
+    .sc02 { }
+    .sc02 figure{width: 25%;}
+
+    .sc03  {background-color: #f2f2f2;}
+    .sc03 figure { width: 20%;}
+
+    .sc04 { }
+    .sc04 figure{width: 16.666666%;}
+
+    .sc05  {background-color: #f2f2f2;}
+    .sc05 figure { width: 50%;}
+
+    
+
+
+         figure p {
+        color: #f00;
+        margin-bottom: 20px;
+    }
+
+     figure a {
+        display: block;
+        width: 160px;
+        height: 30px;
+        background-color: #333;
+        color: #fff;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        line-height: 30px;
+        border-radius: 10px;
+    }
+</style>
+</head>
+<body>
+
+    <h1>layout02</h1>
+
+    <section class="sc01">
+    <h2>Lorem, ipsum dolor.</h2>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <div class="container">
+        <figure>
+            <img src="./img/menu_n01.jpg">
+            <p>Lorem, ipsum dolor.</p>
+            <a href="#!">more</a>
+        </figure>
+        <figure>
+            <img src="./img/menu_n02.jpg">
+            <p>Lorem, ipsum dolor.</p>
+            <a href="#!">more</a>
+        </figure>
+        <figure>
+            <img src="./img/menu_n03.jpg">
+            <p>Lorem, ipsum dolor.</p>
+            <a href="#!">more</a>
+        </figure>
+    </div>
+</section>
+<section class="sc02">
+    <div class="container">
+        <figure>
+            <img src="./img/menu_n01.jpg">
+            <p>Lorem, ipsum dolor.</p>
+            <a href="#!">more</a>
+        </figure>
+        <figure>
+            <img src="./img/menu_n02.jpg">
+            <p>Lorem, ipsum dolor.</p>
+            <a href="#!">more</a>
+        </figure>
+        <figure>
+            <img src="./img/menu_n03.jpg">
+            <p>Lorem, ipsum dolor.</p>
+            <a href="#!">more</a>
+        </figure>
+        <figure>
+            <img src="./img/menu_n01.jpg">
+            <p>Lorem, ipsum dolor.</p>
+            <a href="#!">more</a>
+    </div>
+</section>
+<section class="sc03">
+    <div class="container">
+        <figure>
+            <img src="./img/menu_n01.jpg">
+            <p>Lorem, ipsum dolor.</p>
+            <a href="#!">more</a>
+        </figure>
+        <figure>
+            <img src="./img/menu_n02.jpg">
+            <p>Lorem, ipsum dolor.</p>
+            <a href="#!">more</a>
+        </figure>
+        <figure>
+            <img src="./img/menu_n03.jpg">
+            <p>Lorem, ipsum dolor.</p>
+            <a href="#!">more</a>
+        </figure>
+        <figure>
+            <img src="./img/menu_n01.jpg">
+            <p>Lorem, ipsum dolor.</p>
+            <a href="#!">more</a>
+        </figure>
+        <figure>
+            <img src="./img/menu_n02.jpg">
+            <p>Lorem, ipsum dolor.</p>
+            <a href="#!">more</a>
+        </figure>
+    </div>
+</section>
+<section class="sc04">
+    <div class="container">
+        <figure>
+            <img src="./img/menu_n01.jpg">
+            <p>Lorem, ipsum dolor.</p>
+            <a href="#!">more</a>
+        </figure>
+        <figure>
+            <img src="./img/menu_n02.jpg">
+            <p>Lorem, ipsum dolor.</p>
+            <a href="#!">more</a>
+        </figure>
+        <figure>
+            <img src="./img/menu_n03.jpg">
+            <p>Lorem, ipsum dolor.</p>
+            <a href="#!">more</a>
+        </figure>
+        <figure>
+            <img src="./img/menu_n01.jpg">
+            <p>Lorem, ipsum dolor.</p>
+            <a href="#!">more</a>
+        </figure>
+        <figure>
+            <img src="./img/menu_n02.jpg">
+            <p>Lorem, ipsum dolor.</p>
+            <a href="#!">more</a>
+        </figure>
+        <figure>
+            <img src="./img/menu_n03.jpg">
+            <p>Lorem, ipsum dolor.</p>
+            <a href="#!">more</a>
+        </figure>
+    </div>
+</section>
+<section class="sc05">
+    <div class="container">
+        <figure>
+            <img src="./img/menu_n01.jpg">
+            <p>Lorem, ipsum dolor.</p>
+            <a href="#!">more</a>
+        </figure>
+        <figure>
+            <img src="./img/menu_n02.jpg">
+            <p>Lorem, ipsum dolor.</p>
+            <a href="#!">more</a>
+        </figure>
+        </div>
+</section>
+</body>
+</html>

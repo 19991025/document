@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포지션02</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .mopen {
+            position:fixed;
+            top:50px;
+            right:50px;
+            display:none;
+            width:30px;
+            height:30px;
+        }
+
+        .mopen span {
+            position:absolute;
+            top:0;
+            left:0;            
+            width:100%;
+            height:3px;
+            background:#333;
+            transition:0.5s;
+        }
+
+        .mopen span:nth-child(1) {
+            top:0;
+        }
+        .mopen span:nth-child(2) {
+            top:10px;
+        }
+        .mopen span:nth-child(3) {
+            top:10px;
+        }
+        .mopen span:nth-child(4) {
+            top:20px;
+        }
+
+        @media (max-width:1000px) {
+            nav {
+                position:fixed;
+                top:0;
+                left:-350px;
+                background:#333;  
+                padding:100px 0 0 50px;
+                width:350px;
+                height:100vh; 
+                transition:0.5s;            
+            }
+            nav a {
+                color:#fff;
+            }
+            nav.active {
+                left:0;
+            }
+
+            .mopen {
+                display:block;
+            }
+            .mopen.active span:nth-child(1) {
+                left:-100px;
+                opacity: 0;
+            }
+            .mopen.active span:nth-child(2) {
+                transform:rotate(-45deg);
+            }
+            .mopen.active span:nth-child(3) {
+                transform:rotate(45deg);
+            }
+            .mopen.active span:nth-child(4) {
+                left:100px;
+                opacity: 0;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#!">menu01</a></li>
+            <li><a href="#!">menu02</a></li>
+            <li><a href="#!">menu03</a></li>
+            <li><a href="#!">menu04</a></li>
+            <li><a href="#!">menu05</a></li>
+        </ul>
+    </nav>
+    <div class="none">
+        <i class="xi-bars"></i>
+    </div>
+
+
+    <div class="mopen">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+
+<script src="../js/jquery-1.12.4.min.js"></script>
+<script>
+$('.mopen').on('click', function(){
+    $(this).toggleClass('active');
+    $('nav').toggleClass('active');
+})
+</script>
+</body>
+
+</html>

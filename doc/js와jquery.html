@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트와 자바스크립트 라이브러리인 jquery의 차이</title>
+</head>
+<body>
+    <!-- 자바스크립트와 자바스크립트 라이브러리인 jquery의 차이 -->
+    <h1>you</h1>
+    <button>click me</button>
+    <script>
+        // Vanilla javascript 
+        window.addEventListener('DOMContentLoaded', () => {
+                const YOU = document.querySelector('h1');
+                const BTN = document.querySelector('button');
+
+                BTN.addEventListener('click', () => {
+                    YOU.style.display = 'none'
+                })
+            }
+        )
+        // jquery (jquery library after load)
+        // 제이쿼리는 자바스크립트를 아주 쉽게 사용하기 위해 고안된 작은 프로그램
+        // CDN 혹은 로컬폴더에 저장 후 파일 상부에 로드
+        $(function () {
+            $('button').on('click', function () {
+                $('h1').hide();
+            })
+        })
+    </script>
+</body>
+
+</html>

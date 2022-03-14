@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex02</title>
+    <style>
+        * {margin: 0;height: 0;box-sizing: border-box;}
+
+
+        
+        .itm {width: 200px;}
+
+        .itm:nth-child(1) {background-color: #f00;}
+        .itm:nth-child(2) {background-color: #ff0;}
+        .itm:nth-child(3) {background-color: #00f;}
+        
+        .container {width: 1200px;margin: 100px auto;background-color: #ddd;}
+
+        .flex01 {
+                 display: flex;
+                }
+
+        .flex02 {
+    display: flex;
+    justify-content: space-between;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container flex01";>
+        <div class="itm">A</div>
+        <div class="itm">B</div>
+        <div class="itm">C</div>
+        </div>
+
+        <div class="container flex02";>
+        <div class="itm">A</div>
+        <div class="itm">B</div>
+        <div class="itm">C</div>
+        </div>
+
+        
+
+
+</body>
+</html>
