@@ -1,5 +1,6 @@
 @import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
 
+
 .mainVisual {
     position: relative;
 }
@@ -18,16 +19,17 @@
     background-position-x: center;
     background-position-y: center;
     background-size: cover;
+    border-image: fill;
 }
 
 .mainVisual .itm01 {
-    background-image: url(../img/menu_n01.jpg);
+    background-image: url(../img/fl01.jpg);
 }
 .mainVisual .itm02 {
-    background-image: url(../img/menu_n02.jpg);
+    background-image: url(../img/fl02.jpg);
 }
 .mainVisual .itm03 {
-    background-image: url(../img/menu_n03.jpg);
+    background-image: url(../img/fl03.jpg);
 }
 
 .mainVisual .slick-dots {
@@ -44,7 +46,7 @@
     width: 100px;
     height: 4px;
     border-radius: 2px;
-    background-color: #ff0;
+    background-color: #fff;
     cursor: pointer;
     
 }
@@ -75,7 +77,7 @@
 }
 
 .mainVisual .slick-dots li.slick-active {
-    background-color: #444;
+    background-color: rgb(255, 200, 255);
 }
 
 .mainVisual .slick-dots button {
