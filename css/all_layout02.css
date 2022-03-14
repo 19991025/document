@@ -1,0 +1,91 @@
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+.mainVisual {
+    position: relative;
+}
+
+.mainVisual .slideArrows i{
+    position: absolute;
+    top: 50%;
+    font-size: 100px;
+    color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-50%);
+}
+
+.mainVisual figure {
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+}
+
+.mainVisual .itm01 {
+    background-image: url(../img/menu_n01.jpg);
+}
+.mainVisual .itm02 {
+    background-image: url(../img/menu_n02.jpg);
+}
+.mainVisual .itm03 {
+    background-image: url(../img/menu_n03.jpg);
+}
+
+.mainVisual .slick-dots {
+    position: absolute;
+    left: 50%;
+    bottom: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    transform: translateX(-50%);
+}
+
+.mainVisual .slick-dots li {
+    width: 100px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #ff0;
+    cursor: pointer;
+    
+}
+.mainVisual .slick-arrow  {
+    position: absolute;
+    z-index: 999;
+    width: 100px;
+    height: 100px;
+    transform: translateY(-50%);
+    border-top: #000;
+    border-bottom: #fff;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+
+.mainVisual .slick-prev {
+    top:50%;
+    left: 100px;
+    transform: rotate(-45deg);
+}
+.mainVisual .slick-next {
+    top:50%;
+    left: 100px;
+    transform: rotate(135deg);
+}
+
+.mainVisual .slick-dots li.slick-active {
+    background-color: #444;
+}
+
+.mainVisual .slick-dots button {
+    display: none;
+}
+
+
+.mainVisual .slideArrows i:first-child {
+    left:100px
+}
+.mainVisual .slideArrows i:last-child {
+    right:100px
+}

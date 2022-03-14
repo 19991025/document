@@ -1,0 +1,46 @@
+/* 웹폰트 가져오기 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+/* 웹아이콘 - xeicon */
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+body {font-family: 'Noto Sans KR', sans-serif;}
+
+.header {background:#f2f2f2;}
+.header .container {width:1200px;margin:0 auto;} 
+.header .container::after {content:"";display:block;clear:both;}
+.header h1 {float:left;padding:0 15px;line-height:100px;}
+.header h1 a {display:block;}
+.header h1 img {width:300px;vertical-align:middle;}
+.header .gnb {float:right;}
+.header .gnb>ul>li {float:left;padding:0 15px;line-height:100px;}
+.header .gnb>ul>li a {display:block;}
+
+.visual {position:relative;}
+.visual figure {height:700px;}
+.visual .itm01 {background:url(../img/main_slider_n01.jpg) no-repeat center center/cover;}
+.visual .itm02 {background:url(../img/main_slider_n02.jpg) no-repeat center center/cover;}
+.visual .itm03 {background:url(../img/main_slider_n03.jpg) no-repeat center center/cover;}
+.visual .slogan {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:1200px;padding:0 15px;color:#fff;}
+
+.visual .slogan h2 {font-size:50px;font-weight:700;margin-bottom:30px;text-shadow:0 0 2px #333;}
+.visual .slogan p {font-size:15px;font-weight:300;line-height:1.4;}
+
+.event {padding:100px 0;text-align:center;}
+.event h2 {font-size:20px;font-weight:700;margin-bottom:10px;}
+.event p {font-size:15px;font-weight:300;margin-bottom:30px;}
+.event .container {width:1200px;margin:0 auto;}
+.event .container::after {content:"";display:block;clear:both;}
+.event .container figure {float:left;width:33.333333333%;padding:0 15px;}
+.event .container img {width:100%;}
+
+.event .inner {margin-bottom:20px;overflow:hidden;}
+.event .inner img {transition:0.5s;}
+.event .inner:hover img {transform:scale(1.5);}
+.event figure a {display:block;width:130px;line-height:30px;background:#333;color:#fff;margin:0 auto;}
+
+.footer {padding:50px 0;background:#333;color:#fff;text-align:center;}
+
+.footer .copyright {margin-bottom:20px;}
+.footer .sns i {font-size:20px;padding:10px;background:#444;color:#fff;border-radius:50%;}
+
