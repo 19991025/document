@@ -1,0 +1,129 @@
+.content {
+    padding: 100px 0;
+}
+
+.content .container {
+ display: flex;
+ width: 1200px;
+ margin: 0 auto;   
+}
+
+.content figure {
+ position: relative;   
+ flex: 1;
+ padding: 0 15px;
+}
+
+.content figure img {
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.sec01 figure a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    width: 200px;
+    height: 30px;
+    border: 2px solid rgb(255, 170, 225);
+    text-align: center;
+    line-height: 24px;
+    background-color: #fff;
+    color: rgb(255, 170, 225);
+
+    transition: 0.5s;
+}
+
+.sec01 figure a:hover {
+    background-color: rgb(255, 170, 225);
+    color: #fff;
+}
+
+.sec01 figure:hover a {
+    opacity: 1;
+}
+
+
+.sec02 {
+    background-color: #f2f2f2;
+    color : #333
+}
+
+.sec02 .inner {
+    position: relative;
+}
+
+.sec02 .inner a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    opacity: 0.5;
+    transition: 0.5s;
+    background-color: rgba(0, 0, 0, 5);
+    color:#fff;
+}
+
+.sec02 .inner:hover a {
+    opacity: 1;
+}
+
+.sec03 {
+}
+
+.sec03 .inner {
+    position: relative;
+    overflow: hidden;
+}
+
+.sec03 .inner a {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+        
+    background-color: rgba(0, 0, 0, 0.5);
+    color:#fff;
+    transition: 0.5s;
+    line-height: 50px;
+}
+
+.sec03 .inner:hover a {
+    top:calc(100% - 50px)
+}
+
+.service {
+    padding: 100px 0;
+}
+
+.service .inner {
+    width: 250px;
+    margin: 0 auto;
+    background: 1;
+
+}
+
+.service .inner span {
+    display: inline-block;
+    width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: 0.5s;
+
+}
+
+.service .inner:hover span {
+    width: 200px;
+}
