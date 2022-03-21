@@ -1,0 +1,296 @@
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>all_layout06 06</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/all_layout06.css">
+    <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css">
+</head>
+
+
+<body>
+    <div class="Wrap">
+
+        <!-- { topBanner : oh 2022.03.17 최종수정 -->
+        <div class="topBanner">
+            <div class="container">
+                <h2>JEWELLERY COLLECTION EVENT</h2>
+                <p>
+                    모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉션은 다양한 컷, 스톤 그리고 색상들을 멋진 조합으로 선사합니다.
+
+                    <a href="#!">more</a>
+                </p>
+                <i class="xi-close"></i>
+            </div>
+        </div>
+
+
+        <!-- { header : 2022.03.17 최종수정 -->
+        <header class="headerWrap">
+            <div class="container">
+                <h1>
+                    <a href="/">
+                        <img src="./images/grafflogo.png" alt="grafflogo">
+                    </a>
+                </h1>
+                <nav class="gnb">
+                    <ul>
+                        <li><a href="#!">하이주얼리</a></li>
+                        <li><a href="#!">주얼리 컬렉션</a></li>
+                        <li><a href="#!">컬렉션 & 브라이덜</a></li>
+                        <li><a href="#!">웨딩주얼리</a></li>
+                        <li><a href="#!">특별한 솔리테어</a></li>
+                    </ul>
+                </nav>
+                <div class="searchForm">
+                    <form name="searchForm" id="searchForm" action="">
+                        <input type="search" name="searchvalue" id="searchvalue" placeholder="검색어를 입력해주세요." required>
+                        <button><i class="xi-search"></i></button>
+                    </form>
+                    <script>
+                        const formSumit = () => {
+                            const searchVal = document.searchForm.searchvalue.value;
+                            if (searchVal.length < 5) {
+                                alert('검색어가 너무 짧습니다.');
+                                return
+                            }
+                            alert(searchVal)
+                        }
+                    </script>
+                </div>
+            </div>
+        </header>
+
+
+
+        <main>
+            <!-- { mainVisual : 2022.03.17 최종수정 -->
+            <section class="mainVisual">
+                <div class="visualSlide">
+                    <figure class="itm01">
+                        <div class="inner">
+                            <h3>01. JEWLLRY COLLECTION</h3>
+                            <p>모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉션은 다양한 컷</p>
+                        </div>
+                        <i class="xi-heart"></i>
+                    </figure>
+
+                    <figure class="itm02">
+                        <div class="inner">
+                            <h3>02. JEWLLRY COLLECTION</h3>
+                            <p>모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉션은 다양한 컷</p>
+                        </div>
+                        <i class="xi-heart"></i>
+                    </figure>
+
+                    <figure class="itm03">
+                        <div class="inner">
+                            <h3>03. JEWLLRY COLLECTION</h3>
+                            <p>모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉션은 다양한 컷</p>
+                        </div>
+                        <i class="xi-heart"></i>
+                    </figure>
+                </div>
+            </section>
+
+            <section class="mainProduct">
+                <h2>MAIN PRODUCT</h2>
+                <p>모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉션은 다양한 컷 </p>
+                <div class="container">
+                    <figure>
+                        <div class="inner">
+                            <img src="./images/lesedilarona01.jpg" alt="">
+                        </div>
+                        <strong>스톤 그리고 색상들을 멋진 조합</strong>
+                        <a href="">구매하기</a>
+                    </figure>
+                    <figure>
+                        <div class="inner">
+                            <img src="./images/lesedilarona02.jpg" alt="">
+                        </div>
+                        <strong>스톤 그리고 색상들을 멋진 조합</strong>
+                        <a href="">구매하기</a>
+                    </figure>
+                    <figure>
+                        <div class="inner">
+                            <img src="./images/lesedilarona03.jpg" alt="">
+                        </div>
+                        <strong>스톤 그리고 색상들을 멋진 조합</strong>
+                        <a href="">구매하기</a>
+                        <div class="label">
+                            <span>HIT !</span>
+                        </div>
+                    </figure>
+                </div>
+            </section>
+
+            <section class="eventBanner">
+                <h2>JEWELLERY COLLECTION</h2>
+                <p>모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉션은 다양한 컷 </p>
+                <a href="#!">more <i class="xi-arrow-right"></i></a>
+            </section>
+
+            <section class="evenetProduct">
+                <div class="container">
+                    <div class="left">
+                        <div class="eProductSlide">
+                            <figure><img src="./images/lesedilarona01.jpg" alt=""></figure>
+                            <figure><img src="./images/lesedilarona02.jpg" alt=""></figure>
+                            <figure><img src="./images/lesedilarona03.jpg" alt=""></figure>
+                            <figure><img src="./images/lesedilarona04.jpg" alt=""></figure>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="txtinner">
+                            <h3>JEWELLERY COLLECTION</h3>
+                            <p>모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉션은 다양한 컷 </p>
+                            <i class="xi-pause"></i> <i class="xi-play"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="allProduct">
+                <h2>JEWELLERY COLLECTION</h2>
+                <p>모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉션은 다양한 컷 </p>
+                <div class="container">
+                    <div class="aproductSlide">
+                        <figure>
+                            <div class="inner">
+                                <img src="./images/lesedilarona01.jpg" alt="">
+                            </div>
+                            <strong>JEWELLERY COLLECTION01</strong>
+                        </figure>
+                        <figure>
+                            <div class="inner">
+                                <img src="./images/lesedilarona02.jpg" alt="">
+                            </div>
+                            <strong>JEWELLERY COLLECTION02</strong>
+                        </figure>
+                        <figure>
+                            <div class="inner">
+                                <img src="./images/lesedilarona03.jpg" alt="">
+                            </div>
+                            <strong>JEWELLERY COLLECTION03</strong>
+                        </figure>
+                        <figure>
+                            <div class="inner">
+                                <img src="./images/lesedilarona04.jpg" alt="">
+                            </div>
+                            <strong>JEWELLERY COLLECTION04</strong>
+                        </figure>
+                        <figure>
+                            <div class="inner">
+                                <img src="./images/lesedilarona05.jpg" alt="">
+                            </div>
+                            <strong>JEWELLERY COLLECTION05</strong>
+                        </figure>
+                        <figure>
+                            <div class="inner">
+                                <img src="./images/lesedilarona06.jpg" alt="">
+                            </div>
+                            <strong>JEWELLERY COLLECTION06</strong>
+                        </figure>
+                    </div>
+                    <div class="arrows">
+                        <i class="xi-arrow-right"></i>
+                        <i class="xi-arrow-left"></i>
+                    </div>
+                </div>
+
+            </section>
+            <section class="movieBg">
+                <h3>JEWELLERY COLLECTION</h3>
+                <p>모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉션은 다양한 컷 </p>
+                <div class="btn">
+                    <i class="xi-pause"></i>
+                    <i class="xi-play"></i>
+                </div>
+                <div id="bgndVideo" class="player"></div>
+
+
+            </section>
+            <section class="customerArea">
+                <div class="container">
+                    <div>
+                        <ul class="tabMenu">
+                            <li class="oo"><a href="#!"> News &amp; notive</a></li>
+                            <li><a href="#!">Event</a></li>
+                            <li><a href="#!">issue &amp; doc</a></li>
+                        </ul>
+                        <div class="tabContent">
+                            <div class="oo">
+                                <ul>
+                                    <li><a href="#!"><strong> dd
+                                            </strong><span>2022.03.21</span></a></li>
+                                    <li><a href="#!"><strong> dd
+                                            </strong><span>2022.03.21</span></a></li>
+                                    <li><a href="#!"><strong> dd
+                                            </strong><span>2022.03.21</span></a></li>
+                                    <li><a href="#!"><strong> dd
+                                            </strong><span>2022.03.21</span></a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li><a href="#!"><strong> dd
+                                            </strong><span>2022.03.21</span></a></li>
+                                    <li><a href="#!"><strong> dd
+                                            </strong><span>2022.03.21</span></a></li>
+                                    <li><a href="#!"><strong>dd
+                                            </strong><span>2022.03.21</span></a></li>
+                                    <li><a href="#!"><strong> dd
+                                            </strong><span>2022.03.21</span></a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li><a href="#!"><strong> dd
+                                            </strong><span>2022.03.21</span></a></li>
+                                    <li><a href="#!"><strong> dd
+                                            </strong><span>2022.03.21</span></a></li>
+                                    <li><a href="#!"><strong> dd
+                                            </strong><span>2022.03.21</span></a></li>
+                                    <li><a href="#!"><strong> dd
+                                            </strong><span>2022.03.21</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./images/mainvisual01.jpg" alt="">
+                        <a href="#!" class="button">
+                            view
+                        </a>
+                        <i class="xi-heart"></i>
+                    </div>
+                </div>
+
+            </section>
+
+
+        </main>
+
+
+        <footer class="footerWrap">
+            <div class="footertop">
+
+            </div>
+            <div class="footerbottom"></div>
+        </footer>
+
+    </div>
+
+
+</body>
+<script src="./js/jquery-1.12.4.min.js"></script>
+<script src="./js/jquery.mb.YTPlayer.min.js"></script>
+<script src="./js/slick.min.js"></script>
+<script src="./js/all_layout06.js"></script>
+
+</html>
