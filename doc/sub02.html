@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기본02</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <style>
+        .Wrap {}
+
+        header,
+        footer {
+            height: 100px;
+            background: #343a40;
+            color: #fff;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        article {
+            min-height: 500px;
+            letter-spacing: -0.025em;
+            background-color: #f2f2f2;
+        }
+
+        .subPage .infoMation {
+            padding: 100px 0;
+        }
+
+        .subPage .infoMation h2 {
+            font-size: 30px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .subPage .infoMation h2::after {
+            content: "";
+            display: block;
+            width: 40px;
+            height: 2px;
+            background: #333;
+            margin: 15px auto;
+        }
+
+        .subPage .infoMation>p {
+            text-align: center;
+            font-size: 15px;
+            font-weight: 300;
+            margin-bottom: 40px;
+        }
+
+        .subPage .infoMation .container {
+            flex-wrap: wrap;
+            display: flex;
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .subPage .infoMation .container figure img {
+            width: 1200px;
+            object-fit: fill;
+            overflow: hidden;
+            margin-bottom: 40px;
+            padding: 0 15px;
+        }
+
+        .subPage .infoMation .container .left {
+            width: 35%;
+            padding: 0 15px;
+        }
+
+        .subPage .infoMation .container .left h3 {
+            text-align: center;
+            font-size: 19px;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+
+        .subPage .infoMation .container .left p {
+            text-align: center;
+            font-size: 15px;
+            line-height: 2;
+            font-weight: 300;
+        }
+
+        .subPage .infoMation .container .left p::after {
+            content: "";
+            display: block;
+            width: 1px;
+            height: 150px;
+            background: #333;
+            margin: 30px auto;
+        }
+
+        .subPage .infoMation .container .right {
+            width: 65%;
+            padding: 0 15px;
+            font-weight: 300;
+            line-height: 1.4;
+            text-align: center;
+        }
+
+        .subPage .infoMation .container .right strong {
+            display: block;
+            font-weight: 400;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Wrap">
+        <header>
+            header
+        </header>
+
+
+
+
+        <article class="subPage">
+            <section class="infoMation">
+                <h2>2022 - 03 - 23</h2>
+                <p>김유선</p>
+                <div class="container">
+                    <figure>
+                        <img src="../img/파도.gif" alt="">
+                    </figure>
+                    <div class="left">
+                        <h3>낮은 곳으로</h3>
+                        <p>이정하</p>
+                    </div>
+                    <div class="right">
+                        <p>
+                            낮은 곳에 살고 싶었다
+                            <br>
+                            낮은 곳이라면 지상의
+                            <br><br>
+                            그 어디라도 좋다
+                            <br>
+                            찰랑 찰랑 물처럼
+                            <br>
+                            고여들 네 사랑을
+                            <br>
+                            온몸으로 받아들일 수 있다면
+                            <br>
+                            한방울도 헛되이 새어 나가지
+                            <br>
+                            않게 할수만 있다면
+                            <br><br>
+                            그래, 내가 낮은 곳에
+                            <br>
+                            있겠다는건 너를 위해 나를
+                            <br>
+                            온전히 비우겠다는 뜻이다
+                            <br><br>
+                            나의 존재마저 너에게
+                            <br>
+                            흠뻑주고 싶다는 뜻이다.
+                            <br><br><strong>
+                            잠겨 죽어도 좋으니
+                            <br>
+                            너는 물처럼 내게
+                            <br>
+                            밀려오라</strong>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+        <footer>
+            &copy; useon.
+        </footer>
+    </div>
+</body>
+
+</html>
